@@ -6,7 +6,7 @@ Just as a strong AI model relies on clean, prepared data, a healthy environment 
 
 This project provides a FastAPI server powered by YOLOv8 segmentation models to classify waste from images.
 
-AI segmentation + smart text inference for instant, accurate waste sorting.
+
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688)](https://fastapi.tiangolo.com/) [![YOLOv8](https://img.shields.io/badge/YOLOv8-Segmentation-red)](https://github.com/ultralytics/ultralytics) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
@@ -126,3 +126,4 @@ MIT – see `LICENSE` (add if missing).
 ---
 
 Made with purpose for a cleaner, data-driven planet. *Every sorted item counts.*
+
