@@ -10,10 +10,7 @@ This project provides a **FastAPI server** powered by **YOLOv8 segmentation mode
 ## Features
 
 * **Image Classification**: Upload images for automatic waste detection and classification
-* **Text Classification**: Describe waste items for keyword-based classification
 * **ML Integration**: Uses YOLOv8 segmentation model for accurate object detection
-* **RESTful API**: Clean, documented API endpoints with automatic OpenAPI docs
-* **CORS Enabled**: Frontend-friendly with CORS support for localhost:3000
 * **Cross-Platform**: The web app runs on **desktop and mobile devices** for easy accessibility
 * **No Database Needed**: All classified data is stored **locally in the browser** (no backend DB)
 
@@ -22,9 +19,7 @@ This project provides a **FastAPI server** powered by **YOLOv8 segmentation mode
 ## 🔗 API Endpoints
 
 * `GET /` → Root endpoint and health check
-* `GET /health` → Detailed health status
-* `POST /predict` → Main endpoint (accepts text or image)
-* `POST /predict/text` → Text-only classification
+* `POST /predict` → Main endpoint (accepts image)
 * `POST /predict/image` → Image-only classification
 * `GET /docs` → Interactive API documentation (Swagger UI)
 
@@ -63,13 +58,6 @@ uvicorn main:app --reload --host 127.0.0.1 --port 8000
 
 ## 🚀 Usage Examples
 
-### Text Classification
-
-```bash
-curl -X POST "http://127.0.0.1:8000/predict/text" \
-     -H "Content-Type: application/json" \
-     -d '{"text": "plastic water bottle"}'
-```
 
 ### Image Classification
 
@@ -156,4 +144,5 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 * **Model Fine-Tuning & Model Acquisition**: Brahmee & Rojeena
 * **Backend (FastAPI & Integration)**: Prashant
 * **Data Cleaning, Preparation & Test Data**: Brahmee
+
 
