@@ -1,0 +1,17 @@
+{
+  "total_images": 2527,
+  "processing_stats": {
+    "total_processed": 2527,
+    "failed": 0,
+    "category_counts": {
+      "cardboard\u2192paper": 403,
+      "glass\u2192glass": 501,
+      "metal\u2192metal": 410,
+      "paper\u2192paper": 594,
+      "plastic\u2192plastic": 482,
+      "trash\u2192trash": 137
+    }
+  },
+  "image_size": "224x224",
+  "ready_for_cnn": true
+}
