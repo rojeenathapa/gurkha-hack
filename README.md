@@ -6,7 +6,7 @@ This project provides a FastAPI server powered by YOLOv8 segmentation models to 
 
 
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688)](https://fastapi.tiangolo.com/) [![YOLOv8](https://img.shields.io/badge/YOLOv8-Segmentation-red)](https://github.com/ultralytics/ultralytics) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688)](https://fastapi.tiangolo.com/) [![YOLOv8](https://img.shields.io/badge/YOLOv8-Segmentation-red)]
 
 </div>
 
@@ -105,6 +105,7 @@ Ensure `NEXT_PUBLIC_API_URL` points to the backend.
 | Prashant | Backend & UX                | FastAPI, backend integration, frontend UI & UX             |
 | Rojeena  | ML & Model Fine-Tuning & UX | Model fine-tuning, frontend UI                             |
 | Brahmee  | ML & Data                   | Prepared dataset, acquired model, data cleaning, test data |
+
 
 
 
