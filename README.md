@@ -107,23 +107,6 @@ Ensure `NEXT_PUBLIC_API_URL` points to the backend.
 | Rojeena  | ML & Model Fine-Tuning & UX | Model fine-tuning, frontend UI                             |
 | Brahmee  | ML & Data                   | Prepared dataset, acquired model, data cleaning, test data |
 
----
 
-## 5. License
 
-MIT – see `LICENSE` (add if missing).
-
----
-
-## 6. Acknowledgments
-
-* Ultralytics (YOLOv8)
-* FastAPI community
-* Next.js & Vercel
-* Open source maintainers
-* Kaggle Dataset
-
----
-
-Made with purpose for a cleaner, data-driven planet. *Every sorted item counts.*
 
