@@ -1,0 +1,46 @@
+name: litterly-waste-classification
+services:
+  - name: frontend
+    source_dir: /
+    github:
+      repo: rojeenathapa/gurkha-hack
+      branch: main
+    run_command: npm start
+    build_command: npm run build
+    environment_slug: node-js
+    instance_count: 1
+    instance_size_slug: basic-xxs
+    routes:
+      - path: /
+    envs:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: ${backend.URL}
+
+  - name: backend
+    source_dir: /gurkha-hack
+    github:
+      repo: rojeenathapa/gurkha-hack
+      branch: main
+    run_command: uvicorn main:app --host 0.0.0.0 --port $PORT
+    build_command: pip install -r requirements.txt
+    environment_slug: python
+    instance_count: 1
+    instance_size_slug: basic-s
+    routes:
+      - path: /api
+    envs:
+      - key: PORT
+        value: "8000"
+      - key: ENVIRONMENT
+        value: production
+      - key: MODEL_PATH
+        value: yolov8m-seg.pt
+
+databases:
+  - name: litterly-db
+    engine: PG
+    version: "15"
+    size: db-s-1vcpu-1gb
+    production: false
