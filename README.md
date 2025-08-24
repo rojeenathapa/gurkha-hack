@@ -1,7 +1,7 @@
-# Litterly Waste Classification API ♻️
+# Litterly Waste Classification 
 
 Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste.
-**Litterly** is the "Data Preparation" for the planet — ensuring a clean base for efficient recycling and a healthier environment.
+**Litterly** is the "Data Preparation" for the planet ensuring a clean base for efficient recycling and a healthier environment.
 
 This project provides a **FastAPI server** powered by **YOLOv8 segmentation models** to classify waste from text and images.
 
@@ -156,3 +156,4 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 * **Model Fine-Tuning & Model Acquisition**: Brahmee & Rojeena
 * **Backend (FastAPI & Integration)**: Prashant
 * **Data Cleaning, Preparation & Test Data**: Brahmee
+
