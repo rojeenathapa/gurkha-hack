@@ -1,5 +1,7 @@
 # Litterly Waste Classification API
 
+Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste. Our project, Litterly, is the "Data Preparation" for the planet, ensuring a clean base for efficient recycling and a healthier environment.
+
 A FastAPI server that provides AI-powered waste classification using YOLOv8 segmentation models.
 
 ## Features
@@ -118,3 +120,4 @@ The API is configured with CORS to allow requests from `http://localhost:3000`. 
 - The server runs with auto-reload enabled
 - Changes to `main.py` will automatically restart the server
 - Check the console for detailed logs and error messages
+
