@@ -1,4 +1,4 @@
-# Litterly Waste Classification  
+# Litterly Waste Classification
 
 Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste.
 **Litterly** is the "Data Preparation" for the planet — ensuring a clean base for efficient recycling and a healthier environment.
@@ -148,3 +148,11 @@ curl -X POST "http://127.0.0.1:8000/predict" \
 * Edits in `main.py` restart the server automatically.
 * Check console logs for detailed error messages.
 
+---
+
+## 👥 Team Contributions
+
+* **UX & UI**: Prashant & Rojeena
+* **Model Fine-Tuning & Model Acquisition**: Brahmee & Rojeena
+* **Backend (FastAPI & Integration)**: Prashant
+* **Data Cleaning, Preparation & Test Data**: Brahmee
