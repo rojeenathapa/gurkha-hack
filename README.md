@@ -203,8 +203,9 @@ MIT – see `LICENSE` (add if missing).
 
 ## 18. Acknowledgments
 
-Ultralytics (YOLOv8), FastAPI community, Next.js & Vercel, Open source maintainers.
+Ultralytics (YOLOv8), FastAPI community, Next.js & Vercel, Open source maintainers, Kaggle Dataset.
 
 ---
 
 Made with purpose for a cleaner, data-driven planet. *Every sorted item counts.*
+
