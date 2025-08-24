@@ -184,11 +184,11 @@ JS: next, react, tailwindcss, radix UI components, zod, react-hook-form, lucide-
 
 ## 15. Team Members & Roles
 
-| Name     | Role                   | Responsibilities                                           |
-| -------- | ---------------------- | ---------------------------------------------------------- |
-| Prashant | Backend & UX           | FastAPI, backend integration, frontend UI & UX             |
-| Rojeena  | Model Fine-Tuning & UX | Model fine-tuning, frontend UI                             |
-| Brahmee  | ML & Data              | Prepared dataset, acquired model, data cleaning, test data |
+| Name     | Role                        | Responsibilities                                           |
+| -------- | --------------------------- | ---------------------------------------------------------- |
+| Prashant | Backend & UX                | FastAPI, backend integration, frontend UI & UX             |
+| Rojeena  | ML & Model Fine-Tuning & UX | Model fine-tuning, frontend UI                             |
+| Brahmee  | ML & Data                   | Prepared dataset, acquired model, data cleaning, test data |
 
 ## 16. Contributing
 
