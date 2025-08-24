@@ -4,7 +4,7 @@
 
 Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste. Litterly is the "Data Preparation" for the planet, ensuring a clean base for efficient recycling and a healthier environment.
 
-This project provides a FastAPI server powered by YOLOv8 segmentation models to classify waste from text and images.
+This project provides a FastAPI server powered by YOLOv8 segmentation models to classify waste from images.
 
 AI segmentation + smart text inference for instant, accurate waste sorting.
 
@@ -207,6 +207,7 @@ Ultralytics (YOLOv8), FastAPI community, Next.js & Vercel, Open source maintaine
 ---
 
 Made with purpose for a cleaner, data-driven planet. *Every sorted item counts.*
+
 
 
 
