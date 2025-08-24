@@ -1,148 +1,128 @@
-# Litterly Waste Classification 
+<div align="center">
 
-Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste.
-**Litterly** is the "Data Preparation" for the planet ensuring a clean base for efficient recycling and a healthier environment.
+# ♻️ Litterly – AI-Powered Waste Classification
 
-This project provides a **FastAPI server** powered by **YOLOv8 segmentation models** to classify waste from text and images.
+Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste. Litterly is the "Data Preparation" for the planet, ensuring a clean base for efficient recycling and a healthier environment.
 
----
+This project provides a FastAPI server powered by YOLOv8 segmentation models to classify waste from images.
 
-## Features
+AI segmentation + smart text inference for instant, accurate waste sorting.
 
-* **Image Classification**: Upload images for automatic waste detection and classification
-* **ML Integration**: Uses YOLOv8 segmentation model for accurate object detection
-* **Cross-Platform**: The web app runs on **desktop and mobile devices** for easy accessibility
-* **No Database Needed**: All classified data is stored **locally in the browser** (no backend DB)
+[![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/) [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-009688)](https://fastapi.tiangolo.com/) [![YOLOv8](https://img.shields.io/badge/YOLOv8-Segmentation-red)](https://github.com/ultralytics/ultralytics) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+</div>
 
 ---
 
-## 🔗 API Endpoints
+## 1. Project Overview
 
-* `GET /` → Root endpoint and health check
-* `POST /predict` → Main endpoint (accepts image)
-* `POST /predict/image` → Image-only classification
-* `GET /docs` → Interactive API documentation (Swagger UI)
+Manual waste sorting is slow, costly, and error‑prone, leading to recyclable material ending up in landfills. Litterly acts like a “data preparation layer for the planet,” transforming raw, unstructured waste inputs (photos) into structured, actionable classifications in seconds.
+
+### Core Value
+
+Better sorting → higher recycling rates → reduced contamination → measurable sustainability impact.
+
+### Key Capabilities
+
+* Image segmentation (YOLOv8) with bounding boxes & masks
+* Mobile‑friendly camera capture (PWA‑ready)
+* Local (browser) storage of history—no backend DB needed
+* API-first design for integrations
 
 ---
 
-## ⚙️ Setup
+## 2. Setup and Run Instructions
 
-### 1. Install Dependencies
+### Prerequisites
+
+* Node.js 18+
+* Python 3.8+
+* Git
+
+### Backend (FastAPI)
 
 ```bash
 cd gurkha-hack
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use .\.venv\Scripts\Activate
+pip install --upgrade pip
 pip install -r requirements.txt
-```
-
-### 2. Start the Server
-
-**Option 1: Using the startup script**
-
-```bash
 python start_server.py
 ```
 
-**Option 2: Direct uvicorn command**
+Server: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+Docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+### Frontend (Next.js)
 
 ```bash
-uvicorn main:app --reload --host 127.0.0.1 --port 8000
+cd ..
+npm install
+npm run dev
 ```
 
-### 3. Verify Server is Running
-
-* Server: [http://127.0.0.1:8000](http://127.0.0.1:8000)
-* API Docs: [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-* Health Check: [http://127.0.0.1:8000/health](http://127.0.0.1:8000/health)
+App: [http://localhost:3000](http://localhost:3000)
+Ensure `NEXT_PUBLIC_API_URL` points to the backend.
 
 ---
 
-## 🚀 Usage Examples
+## 3. Dependencies and Tools Used
 
+### Backend
 
-### Image Classification
+* FastAPI
+* Uvicorn
+* Gunicorn (production)
+* YOLOv8 (Ultralytics)
+* Torch
+* OpenCV
+* Pillow
+* Pydantic
+* python-multipart
 
-```bash
-curl -X POST "http://127.0.0.1:8000/predict/image" \
-     -F "image=@your_image.jpg"
-```
+### Frontend
 
-### Combined Endpoint
+* Next.js 14
+* React 18
+* TypeScript
+* Tailwind CSS
+* Radix UI
+* Lucide Icons
+* Zod
+* React Hook Form
 
-```bash
-curl -X POST "http://127.0.0.1:8000/predict" \
-     -F "text=plastic bottle" \
-     -F "image=@your_image.jpg"
-```
+### Tooling
 
----
-
-## 📦 Response Format
-
-```json
-{
-  "success": true,
-  "predictions": [
-    {
-      "id": 1,
-      "class_name": "plastic",
-      "class_id": 0,
-      "confidence": 0.95,
-      "bbox": {
-        "x1": 100.5,
-        "y1": 150.2,
-        "x2": 300.8,
-        "y2": 400.1
-      }
-    }
-  ],
-  "message": "Found 1 waste objects",
-  "processing_time": 0.234
-}
-```
+* Node.js
+* pip / virtualenv
+* curl
 
 ---
 
-## 🖥️ Frontend Integration
+## 4. Team Contributions
 
-* The API is configured with **CORS** to allow requests from `http://localhost:3000`.
-* Frontend works on **React/Next.js** and is fully compatible with **mobile browsers**.
-* Since there’s **no backend database**, all results and history are stored **locally in the browser (IndexedDB/localStorage)**.
-
----
-
-## 🛠️ Troubleshooting
-
-### Model Loading Issues
-
-* Ensure `yolov8m-seg.pt` model file is present.
-* Verify all dependencies are installed.
-* Check system RAM for model loading.
-
-### CORS Issues
-
-* Default: `localhost:3000` is allowed.
-* Update `main.py` if using a different port.
-
-### Performance
-
-* First request may be slow (model warmup).
-* Large images increase processing time → resize before uploading.
+| Name     | Role                        | Responsibilities                                           |
+| -------- | --------------------------- | ---------------------------------------------------------- |
+| Prashant | Backend & UX                | FastAPI, backend integration, frontend UI & UX             |
+| Rojeena  | ML & Model Fine-Tuning & UX | Model fine-tuning, frontend UI                             |
+| Brahmee  | ML & Data                   | Prepared dataset, acquired model, data cleaning, test data |
 
 ---
 
-## 👨‍💻 Development
+## 5. License
 
-* Server runs with **auto-reload** (`--reload`).
-* Edits in `main.py` restart the server automatically.
-* Check console logs for detailed error messages.
+MIT – see `LICENSE` (add if missing).
 
 ---
 
-## 👥 Team Contributions
+## 6. Acknowledgments
 
-* **UX & UI**: Prashant & Rojeena
-* **Model Fine-Tuning & Model Acquisition**: Brahmee & Rojeena
-* **Backend (FastAPI & Integration)**: Prashant
-* **Data Cleaning, Preparation & Test Data**: Brahmee
+* Ultralytics (YOLOv8)
+* FastAPI community
+* Next.js & Vercel
+* Open source maintainers
+* Kaggle Dataset
 
+---
 
+Made with purpose for a cleaner, data-driven planet. *Every sorted item counts.*
