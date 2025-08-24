@@ -2,8 +2,6 @@
 
 # ♻️ Litterly – AI-Powered Waste Classification
 
-Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste. Litterly is the "Data Preparation" for the planet, ensuring a clean base for efficient recycling and a healthier environment.
-
 This project provides a FastAPI server powered by YOLOv8 segmentation models to classify waste from images.
 
 
@@ -16,7 +14,8 @@ This project provides a FastAPI server powered by YOLOv8 segmentation models to 
 
 ## 1. Project Overview
 
-Manual waste sorting is slow, costly, and error‑prone, leading to recyclable material ending up in landfills. Litterly acts like a “data preparation layer for the planet,” transforming raw, unstructured waste inputs (photos) into structured, actionable classifications in seconds.
+Just as a strong AI model relies on clean, prepared data, a healthy environment relies on clean, sorted waste. Litterly is the "Data Preparation" for the planet, ensuring a clean base for efficient recycling and a healthier environment.
+
 
 ### Core Value
 
@@ -106,6 +105,7 @@ Ensure `NEXT_PUBLIC_API_URL` points to the backend.
 | Prashant | Backend & UX                | FastAPI, backend integration, frontend UI & UX             |
 | Rojeena  | ML & Model Fine-Tuning & UX | Model fine-tuning, frontend UI                             |
 | Brahmee  | ML & Data                   | Prepared dataset, acquired model, data cleaning, test data |
+
 
 
 
