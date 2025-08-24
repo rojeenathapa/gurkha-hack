@@ -16,7 +16,7 @@ AI segmentation + smart text inference for instant, accurate waste sorting.
 
 ## 1. Project Overview
 
-Manual waste sorting is slow, costly, and error‑prone, leading to recyclable material ending up in landfills. Litterly acts like a “data preparation layer for the planet,” transforming raw, unstructured waste inputs (photos / descriptions) into structured, actionable classifications in seconds.
+Manual waste sorting is slow, costly, and error‑prone, leading to recyclable material ending up in landfills. Litterly acts like a “data preparation layer for the planet,” transforming raw, unstructured waste inputs (photos) into structured, actionable classifications in seconds.
 ### Core Value
 
 Better sorting → higher recycling rates → reduced contamination → measurable sustainability impact.
@@ -207,6 +207,7 @@ Ultralytics (YOLOv8), FastAPI community, Next.js & Vercel, Open source maintaine
 ---
 
 Made with purpose for a cleaner, data-driven planet. *Every sorted item counts.*
+
 
 
 
