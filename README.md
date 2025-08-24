@@ -1,6 +1,6 @@
 <div align="center">
 
-# ♻️ Litterly – AI-Powered Waste Classification
+# ♻️ Litterly –  Waste Classification
 
 This project provides a FastAPI server powered by YOLOv8 segmentation models to classify waste from images.
 
@@ -105,6 +105,7 @@ Ensure `NEXT_PUBLIC_API_URL` points to the backend.
 | Prashant | Backend & UX                | FastAPI, backend integration, frontend UI & UX             |
 | Rojeena  | ML & Model Fine-Tuning & UX | Model fine-tuning, frontend UI                             |
 | Brahmee  | ML & Data                   | Prepared dataset, acquired model, data cleaning, test data |
+
 
 
 
