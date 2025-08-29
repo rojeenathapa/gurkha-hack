@@ -109,6 +109,20 @@ Ensure `NEXT_PUBLIC_API_URL` points to the backend.
 
 
 
+## 5. Screenshots
+
+<div align="center">
+  <img src="./assets/screenshots/SS1.png" width="300" />
+  <img src="./assets/screenshots/SS2.png" width="300" />
+  <img src="./assets/screenshots/SS3.png" width="300" />
+</div>
+
+<div align="center">
+  <img src="./assets/screenshots/SS4.png" width="300" />
+  <img src="./assets/screenshots/SS5.png" width="300" />
+  <img src="./assets/screenshots/SS6.png" width="300" />
+</div>
+
 
 
 
